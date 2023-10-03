@@ -15,6 +15,12 @@ add_action('wp_enqueue_scripts', 'exit_intent_popup_enqueue_bioep');
 function exit_intent_popup_enqueue_scripts() {
     wp_enqueue_script('exit-intent-popup', plugin_dir_url(__FILE__) . 'js/exit-intent-popup.js', array('jquery'), '1.0', true);
     wp_enqueue_style('exit-intent-popup-style', plugin_dir_url(__FILE__) . 'css/exit-intent-popup.css');
+    
+    // Localize the script with new data
+    $ajax_array = array(
+        'ajax_url' => admin_url('admin-ajax.php')
+    );
+    wp_localize_script('exit-intent-popup', 'ajax_object', $ajax_array);
 }
 add_action('wp_enqueue_scripts', 'exit_intent_popup_enqueue_scripts');
 
