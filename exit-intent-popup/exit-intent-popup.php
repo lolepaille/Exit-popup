@@ -3,7 +3,7 @@
 Plugin Name: Exit Intent Popup
 Description: Display a popup when the user leaves the page.
 Version: 1.0
-Author: Your Name
+Author: Lawrence
 */
 
 // Enqueue the JavaScript and CSS files
