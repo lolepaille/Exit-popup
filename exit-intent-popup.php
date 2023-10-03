@@ -23,6 +23,8 @@ function exit_intent_popup_enqueue_scripts() {
     wp_localize_script('exit-intent-popup', 'ajax_object', $ajax_array);
 }
 add_action('wp_enqueue_scripts', 'exit_intent_popup_enqueue_scripts');
+add_action('wp_ajax_my_action', 'my_action_callback_function');
+
 
 // Add the popup content
 function exit_intent_popup_content() {
