@@ -26,7 +26,7 @@ function exit_intent_popup_content() {
     ?>
     <div id="bio_ep">
         <div id="bio_ep_content">
-            <h2>Don’t go without saying goodbye!</h2>
+            <h2>Don’t go without saying goodbye!.</h2>
             <p>Seriously though, we’d love to know how we can help you with your social media needs. Send us a message, and our Head of Strategy Jess will reach out for a chat.</p>
             <?php echo do_shortcode('[contact-form-7 id="2947" title="Get in touch - Contact Page"]'); ?>
             <br />
